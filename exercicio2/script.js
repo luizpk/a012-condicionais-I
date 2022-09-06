@@ -9,14 +9,12 @@ if(idade>=18){
 }
 
 
-let terminouEM = prompt(`${nome}, você terminou o Ensino Médio?
-Digite Sim ou Não`)
-if(terminouEM===("Sim"&&"sim")){
+let terminouEM = confirm(`${nome}, você terminou o Ensino Médio?`)
+if(terminouEM===true){
     alert(`Parabêns ${nome}! 
            Você tem o Ensino Médio concluído!`)
-    let isCursandoOutraFaculdade = ( prompt(`${nome}, Você está cursando Ensino Superior?
-    Digite Sim ou Não`))
-     if(isCursandoOutraFaculdade===("Sim"&&"sim")){
+    let isCursandoOutraFaculdade = confirm(`${nome}, Você está cursando Ensino Superior?`)
+     if(isCursandoOutraFaculdade===true){
         alert("Isso mesmo, você está no caminho certo!")
      } else{
         alert(`${nome}, você precisa completar seus estudos.`)
